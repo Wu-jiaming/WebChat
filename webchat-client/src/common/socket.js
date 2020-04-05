@@ -30,7 +30,7 @@ function addGroupsListener(user, state) {
 function addUserListener(user, state) {
     let old = state.user
     socket.removeAllListeners(old._id)
-    socket.on(user._id, ({ from, data }) => {
+    socket.on(user._id, ({ from, data }) => {debugger;
         let notice = document.getElementById('notice')
         notice.play()
         if (from === state.currentOne._id) {

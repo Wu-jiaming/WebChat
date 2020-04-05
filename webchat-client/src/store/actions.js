@@ -58,11 +58,11 @@ export default {
             return dispatch('getList')
         })
     },
-    searchUsers({ state, commit }, keyword) {debugger;
+    searchUsers({ state, commit }, keyword) {
         return ws.searchUsers({
             keyword,
             from: state.user._id
-        }).then(result => {debugger;
+        }).then(result => {
             commit('setResult', { result })
         })
     },
@@ -80,11 +80,11 @@ export default {
             return dispatch('getList')
         })
     },
-    addFriend({ state, dispatch }, friendId) {
+    addFriend({ state, dispatch }, friendId) {debugger;
         return ws.addFriend({
             from: state.user._id,
             friendId
-        }).then(() => {debugger;
+        }).then(() => {
             return dispatch('getList')
         })
     },

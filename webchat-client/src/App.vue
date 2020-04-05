@@ -7,7 +7,6 @@
     <template v-else>
       <SigninAndSignup></SigninAndSignup>
     </template>
-    <router-view/>
   </div>
 </template>
 

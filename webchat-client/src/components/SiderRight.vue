@@ -169,6 +169,7 @@ export default {
             this.page = 1
             this.$store.dispatch('pullMsg', this.page)
         },
+
         length(newVal) {
             let elem = document.getElementById('show-area')
             if (!newVal) return

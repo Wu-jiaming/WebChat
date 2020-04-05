@@ -1,7 +1,7 @@
 import store from '@/store'
 import { socket } from './socket'
 
-socket.on('addFriend', ({ friendId }) => {
+socket.on('addFriend', ({ friendId }) => {debugger;
     let { user, activeList } = store.state
     if (user && user._id == friendId && activeList === 'friends') {
         store.dispatch('getList')

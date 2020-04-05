@@ -82,7 +82,7 @@ export default {
             })
         })
     },
-    addFriend(params) {
+    addFriend(params) {debugger;
         return new Promise((res, rej) => {
             socket.emit('addFriend', params)
             socket.once('addFriend', data => {
