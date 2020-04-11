@@ -1,0 +1,1 @@
+cd ./webchat-server && npm i && cd ../vue-chat-client && npm i
