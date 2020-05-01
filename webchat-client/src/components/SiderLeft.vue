@@ -3,10 +3,10 @@
       <ul class="list">
         <li class="item">
           <img :src="user.avatar" @click="modifyDialog=true" class="avatar link">
-          <span class="name text-white">
+          <!-- <span class="name text-white">
             {{user.name}} 
             <i @click="signOut" class="el-icon-error text-red" title="退出"></i>
-          </span>
+          </span> -->
         </li>
         <li class="item">
           <el-row :gutter="20">
@@ -59,6 +59,7 @@
               :disabled="disabledBtn">修改资料</el-button>
             </el-form-item>
           </el-form>
+          <el-button type="danger" @click="signOut">退出登录</el-button>
         </div>
       </el-dialog>
 
